@@ -1,0 +1,89 @@
+{
+   "name": "@bemoje/expected-got",
+   "version": "1.0.0",
+   "description": "Creates an error-message string with ANSI-colors to make it easy to spot in the console.",
+   "main": "dist/expected-got.umd.js",
+   "module": "dist/expected-got.esm.js",
+   "browser": "dist/expected-got.umd.js",
+   "github": {
+      "user": "bemoje"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/bemoje/bemoje-expected-got.git"
+   },
+   "scripts": {
+      "test": "jest",
+      "example": "node -r esm examples/expected-got.example.js",
+      "docs": "documentation build src/** -f md -o docs/api.md && documentation build src/** -f html -o docs",
+      "rollup": "rollup -c",
+      "bench": "node -r esm benchmark/expected-got.benchmark.js",
+      "repo": "node -r esm scripts/repo.js",
+      "clean": "rimraf",
+      "version": "npm run repo version",
+      "major": "npm run repo bumpVersionMajor",
+      "minor": "npm run repo bumpVersionMinor",
+      "patch": "npm run repo bumpVersionPatch",
+      "readme": "npm run repo writeReadme",
+      "rename": "npm run repo rename",
+      "description": "npm run repo description",
+      "keywords": "npm run repo keywords",
+      "build": "npm run test && npm run bench && npm run rollup && npm run docs && npm run description && npm run keywords && npm run readme",
+      "commit": "npm run repo gitCommit",
+      "git-delete": "rimraf .git && bash scripts/github-delete.sh bemoje bemoje-expected-got",
+      "git-create": "rimraf .git && npm run repo gitCreate",
+      "publish": "npm run repo npmPublish"
+   },
+   "bugs": {
+      "url": "https://github.com/bemoje/bemoje-expected-got/issues",
+      "email": "bemoje@gmail.com"
+   },
+   "author": {
+      "name": "Benjamin M. Jensen",
+      "email": "bemoje@gmail.com",
+      "web": "https://github.io/bemoje/"
+   },
+   "license": "MIT",
+   "dependencies": {
+      "@bemoje/is-array": "^1.0.0",
+      "@bemoje/type-of": "^1.0.0",
+      "@types/chalk": "^2.2.0",
+      "chalk": "^4.0.0"
+   },
+   "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-jest": "^25.4.0",
+      "babel-preset-env": "^1.7.0",
+      "documentation": "^12.3.0",
+      "esm": "^3.2.25",
+      "fs-extra": "^9.0.0",
+      "hirestime": "^6.0.1",
+      "jest": "^24.9.0",
+      "keyword-extractor": "0.0.18",
+      "path": "^0.12.7",
+      "rimraf": "^3.0.2",
+      "rollup": "^1.32.1",
+      "rollup-plugin-commonjs": "^10.1.0",
+      "rollup-plugin-node-resolve": "^5.2.0",
+      "strip-ansi": "^6.0.0",
+      "walk-sync": "^2.1.0"
+   },
+   "keywords": [
+      "creates",
+      "error-message",
+      "string",
+      "ansi-colors",
+      "make",
+      "easy",
+      "spot",
+      "console",
+      "expectedgot",
+      "constructor",
+      "expected",
+      "type's",
+      "argued",
+      "error",
+      "message",
+      "ansi-formatted"
+   ]
+}
