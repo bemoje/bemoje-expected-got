@@ -1,6 +1,6 @@
 {
    "name": "@bemoje/expected-got",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "Creates an error-message string with ANSI-colors to make it easy to spot in the console.",
    "main": "dist/expected-got.umd.js",
    "module": "dist/expected-got.esm.js",
@@ -46,13 +46,13 @@
    "license": "MIT",
    "dependencies": {
       "@bemoje/is-array": "^1.0.0",
-      "@bemoje/type-of": "^1.0.0",
+      "@bemoje/type-of": "^1.0.3",
       "@types/chalk": "^2.2.0",
       "chalk": "^4.0.0"
    },
    "devDependencies": {
       "babel-core": "^6.26.3",
-      "babel-jest": "^25.4.0",
+      "babel-jest": "^25.5.1",
       "babel-preset-env": "^1.7.0",
       "documentation": "^12.3.0",
       "esm": "^3.2.25",
